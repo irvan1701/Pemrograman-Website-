@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+</head>
+<body>
+    <style>
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            margin-right: 10px;
+        }
+        nav a {
+            text-decoration: none;
+        }
+        #formulir {
+            display: flex;
+            justify-content: center;
+            
+        }
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        #text {
+            margin-bottom: 20px;
+        }
+        #text label {
+            display: inline-block;
+            width: 100px;
+        }
+        #text input {
+            width: 200px;
+            padding: 5px;
+        }
+
+        form{
+            margin-left: 10%;
+        }
+    </style>
+    
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <h1 id="formulir"><strong>Formulir Kontak</strong></h1>
+    <form>
+        <div id="text">
+            <label for="uname">Nama </label>
+            <input type="text" id="uname" name="name" />
+        </div>
+       
+        <h4>Kewarganegaraan :</h4>
+        <div id="radio">
+            <input type="radio" name="Kewarganegaraan" value="W">WNI <br>
+            <input type="radio" name="Kewarganegaraan" value="A">Asing
+        </div>
+
+        <div id="check">
+        <h4>Layanan :</h4>
+            <input type="checkbox" name="Layanan[]" value="Web">Website <br>
+            <input type="checkbox"  name="Layanan[]" value="Host"> Hosting
+        </div>
+        <div id="tombol" style="margin-top: 2%;">
+            <button type="submit" id="submit">Kirim</button>
+            <button type="reset" id="reset">Hapus</button>
+        </div>
+      </form>
+      
+    
+
+</body>
+</html>
